@@ -32,7 +32,6 @@ export const Home: FC = () => {
 
     return (
         <Page>
-            <h1>Astra TV</h1>
             <Search onChange={(e) => doSearch(e.target.value)} />
             {!isLoading && (
                 <p className="request-status">
