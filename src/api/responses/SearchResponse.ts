@@ -1,6 +1,6 @@
-import { Show } from '../Show';
+import { ShowResponse } from './ShowResponse';
 
 export type SearchResponse = {
     score: number;
-    show: Show;
+    show: ShowResponse;
 }[];

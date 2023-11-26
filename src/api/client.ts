@@ -1,4 +1,4 @@
-import { Show } from './Show';
+import { ShowResponse } from './responses/ShowResponse';
 import { GetScheduleResponse } from './responses/ScheduleListResponse';
 import { SearchResponse } from './responses/SearchResponse';
 
@@ -21,7 +21,7 @@ export const client = () => {
         return get(`/search/shows?q=${query}`);
     };
 
-    const getShow = async (id: number): Promise<Show> => {
+    const getShow = async (id: number): Promise<ShowResponse> => {
         return get(`/shows/${id}`);
     };
 

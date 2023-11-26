@@ -1,4 +1,4 @@
-export type Show = {
+export type ShowResponse = {
     id: number;
     url: string;
     name: string;

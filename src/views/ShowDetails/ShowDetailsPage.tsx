@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { Show } from '../../api/Show';
+import { ShowResponse } from '../../api/responses/ShowResponse';
 import fallbackThumbnail from '../../assets/thumbnail_fallback.webp';
 import { Hero } from '../../components/Hero/Hero';
 import { stripHtmlOfTags } from '../../utils/text';
 import './ShowDetailsPage.scss';
 export const ShowDetailsPage: FC = () => {
-    const { show } = useLoaderData() as { show: Show };
+    const { show } = useLoaderData() as { show: ShowResponse };
 
     return (
         <div className="container">

@@ -1,4 +1,4 @@
-import { Show } from '../Show';
+import { ShowResponse } from './ShowResponse';
 
 export type GetScheduleResponse = {
     id: number;
@@ -18,5 +18,5 @@ export type GetScheduleResponse = {
         self: { href: string };
         show: { href: string };
     };
-    show: Show;
+    show: ShowResponse;
 }[];
