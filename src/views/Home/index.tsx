@@ -8,6 +8,7 @@ import { Page } from '../../components/Page';
 import { Search } from '../../components/Search';
 import { getTodaysDate } from '../../utils/date';
 import { stripHtmlOfTags } from '../../utils/text';
+import { RequestStatusIndicator } from '../../components/RequestStatusIndicator';
 
 export const Home: FC = () => {
     const [scheduledShows, setScheduledShows] = useState<GetScheduleResponse>(
@@ -16,7 +17,7 @@ export const Home: FC = () => {
 
     const [searchResults, setSearchResults] = useState<SearchResponse>([]);
 
-    const { isLoading, isDelayed, client } = useApi();
+    const { client, ...status } = useApi();
 
     useEffect(() => {
         const shouldFetchSchedule = () =>
@@ -38,14 +39,7 @@ export const Home: FC = () => {
     return (
         <Page>
             <Search onChange={(e) => doSearch(e.target.value)} />
-            {!isLoading && (
-                <p className="request-status">
-                    Loading...
-                    {!isDelayed
-                        ? ' Things are taking longer than usual, check your internet connection'
-                        : ''}
-                </p>
-            )}
+            <RequestStatusIndicator {...status} />
             <h2>Today's Schedule</h2>
             <p>{getTodaysDate()}</p>
             {searchResults && searchResults?.length > 0 ? (

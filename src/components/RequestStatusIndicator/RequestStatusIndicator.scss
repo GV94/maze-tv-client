@@ -1,0 +1,10 @@
+.requestStatusIndicator {
+    padding: 0.5rem;
+
+    .loading {
+    }
+
+    .error {
+        color: red;
+    }
+}
