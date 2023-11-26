@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    .content {
+        padding: 0.5rem;
+
+        table {
+            width: 100%;
+        }
+
+        tr {
+            text-align: left;
+        }
+        td {
+            text-align: right;
+        }
+    }
+}

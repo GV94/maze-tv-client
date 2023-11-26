@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import { Card } from '../Card';
 import { CardProps } from '../Card/CardProps';
 import './Listing.scss';
@@ -11,14 +12,15 @@ export const Listing: FC<ListingProps> = ({ listItems }) => {
         <div className="listing">
             {listItems.map((item) => {
                 return (
-                    <div className="item">
-                        <Card
-                            key={item.id}
-                            title={item.title}
-                            summary={item.summary}
-                            image={item.image}
-                        />
-                    </div>
+                    <Link to={`/show/${item.id}`} key={item.id}>
+                        <div className="item">
+                            <Card
+                                title={item.title}
+                                summary={item.summary}
+                                image={item.image}
+                            />
+                        </div>
+                    </Link>
                 );
             })}
         </div>

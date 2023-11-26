@@ -18,7 +18,5 @@ export type GetScheduleResponse = {
         self: { href: string };
         show: { href: string };
     };
-    _embedded: {
-        show: Show;
-    };
+    show: Show;
 }[];
