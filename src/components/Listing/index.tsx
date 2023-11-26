@@ -19,6 +19,7 @@ export const Listing: FC<ListingProps> = ({ listItems }) => {
                                 title={item.title}
                                 summary={item.summary}
                                 image={item.image}
+                                subtitle={item.subtitle}
                             />
                         </div>
                     </Link>

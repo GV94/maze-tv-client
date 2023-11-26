@@ -19,11 +19,16 @@ export const Home: FC = () => {
     const { isLoading, isDelayed, client } = useApi();
 
     useEffect(() => {
-        (async () => {
-            const result = await client.getSchedule(getTodaysDate(), 'us');
-            setScheduledShows(result);
-        })();
-    }, [client]);
+        const shouldFetchSchedule = () =>
+            !scheduledShows || scheduledShows?.length == 0;
+
+        if (shouldFetchSchedule()) {
+            (async () => {
+                const result = await client.getSchedule(getTodaysDate(), 'us');
+                setScheduledShows(result);
+            })();
+        }
+    }, [client, scheduledShows]);
 
     const doSearch = async (query: string) => {
         const result = await client.search(query);
@@ -58,16 +63,23 @@ export const Home: FC = () => {
                 />
             ) : (
                 <Listing
-                    listItems={scheduledShows.map((scheduleEntry) => ({
-                        id: scheduleEntry.id,
-                        navigationLink: `/show/${scheduleEntry.show.id}`,
-                        title: scheduleEntry.show.name,
-                        summary: stripHtmlOfTags(
-                            scheduleEntry.show.summary ?? ''
-                        ).slice(0, 100),
-                        image:
-                            scheduleEntry.show.image?.original ?? fallbackImg,
-                    }))}
+                    listItems={scheduledShows
+                        .filter(
+                            (scheduleEntry) =>
+                                new Date(scheduleEntry.airstamp) > new Date()
+                        )
+                        .map((scheduleEntry) => ({
+                            id: scheduleEntry.id,
+                            navigationLink: `/show/${scheduleEntry.show.id}`,
+                            title: scheduleEntry.show.name,
+                            subtitle: `Airs ${scheduleEntry.airtime}`,
+                            summary: stripHtmlOfTags(
+                                scheduleEntry.show.summary ?? ''
+                            ).slice(0, 100),
+                            image:
+                                scheduleEntry.show.image?.original ??
+                                fallbackImg,
+                        }))}
                 />
             )}
         </Page>
