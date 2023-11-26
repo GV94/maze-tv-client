@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { HeroProps } from './Hero.props';
+import { HeroProps } from './hero.props';
 import './hero.scss';
 
 export const Hero: FC<HeroProps> = ({ title, image }) => {

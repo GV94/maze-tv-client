@@ -4,7 +4,7 @@ import { SearchResponse } from '../../api/responses/SearchResponse';
 import { useApi } from '../../api/useApi';
 import fallbackImg from '../../assets/thumbnail_fallback.webp';
 import { Listing } from '../../components/Listing';
-import { Page } from '../../components/Page/Page';
+import { Page } from '../../components/Page';
 import { Search } from '../../components/Search';
 import { getTodaysDate } from '../../utils/date';
 import { stripHtmlOfTags } from '../../utils/text';

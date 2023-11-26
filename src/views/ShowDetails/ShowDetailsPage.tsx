@@ -2,10 +2,10 @@ import { FC } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { ShowResponse } from '../../api/responses/ShowResponse';
 import fallbackThumbnail from '../../assets/thumbnail_fallback.webp';
-import { Hero } from '../../components/Hero/Hero';
+import { Hero } from '../../components/Hero';
+import { Page } from '../../components/Page';
 import { stripHtmlOfTags } from '../../utils/text';
 import './ShowDetailsPage.scss';
-import { Page } from '../../components/Page/Page';
 export const ShowDetailsPage: FC = () => {
     const { show } = useLoaderData() as { show: ShowResponse };
 
