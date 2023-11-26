@@ -1,14 +1,8 @@
 import { FC } from 'react';
 import './Card.scss';
 import { CardProps } from './CardProps';
+import { cropText } from '../../utils/text';
 export const Card: FC<CardProps> = ({ title, subtitle, summary, image }) => {
-    const cropText = (title: string, length: number) => {
-        if (title.length > 20) {
-            return `${title.slice(0, length)}...`;
-        } else {
-            return title;
-        }
-    };
     return (
         <div className="card">
             <img src={image} alt="" className="thumbnail" />
