@@ -1,38 +1,40 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import { client } from './api/client';
+import { GetScheduleResponse } from './api/responses/ScheduleListResponse';
+import { Listing } from './components/Listing';
+import { getTodaysDate } from './utils/date';
 
 function App() {
-    const [count, setCount] = useState(0);
+    const [scheduledShows, setScheduledShows] = useState<GetScheduleResponse>(
+        []
+    );
+
+    useEffect(() => {
+        (async () => {
+            const result = await client().getSchedule(getTodaysDate(), 'us');
+            setScheduledShows(result);
+        })();
+    }, []);
+
+    const stripHtmlOfTags = (html: string): string => {
+        return html.replace(/<[^>]*>?/gm, '');
+    };
 
     return (
-        <>
-            <div>
-                <a href="https://vitejs.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
-            </div>
-            <h1>Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
-        </>
+        <div>
+            <h1>Astra TV</h1>
+            <h2>Today's Schedule</h2>
+            <p>{getTodaysDate()}</p>
+            <Listing
+                listItems={scheduledShows.map((show) => ({
+                    id: show.id,
+                    title: show.name,
+                    summary: stripHtmlOfTags(show.summary ?? '').slice(0, 100),
+                    image: show.image?.original ?? '',
+                }))}
+            />
+        </div>
     );
 }
 
