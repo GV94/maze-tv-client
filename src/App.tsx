@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './App.css';
+import './App.scss';
 import { client } from './api/client';
 import { GetScheduleResponse } from './api/responses/ScheduleListResponse';
 import fallbackImg from './assets/thumbnail_fallback.webp';
