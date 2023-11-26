@@ -6,6 +6,7 @@ const defaultExecutor = async <T>(url: string): Promise<T> => {
     const response = await fetch('http://api.tvmaze.com' + url);
     return response.json();
 };
+
 export const clientFactory = (
     requestExecutor: <T>(url: string) => Promise<T> = defaultExecutor
 ) => {
