@@ -1,4 +1,5 @@
 import { GetScheduleResponse } from './responses/ScheduleListResponse';
+import { SearchResponse } from './responses/SearchResponse';
 
 export const client = () => {
     const baseUrl = 'http://api.tvmaze.com';
@@ -15,7 +16,12 @@ export const client = () => {
         return get(`/schedule?country=${country}&date=${date}`);
     };
 
+    const search = async (query: string): Promise<SearchResponse> => {
+        return get(`/search/shows?q=${query}`);
+    };
+
     return {
         getSchedule,
+        search,
     };
 };
