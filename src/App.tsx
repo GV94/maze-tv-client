@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { client } from './api/client';
+import { clientFactory } from './api/clientFactory';
 import { Home } from './views/Home/Home';
 import { ShowDetailsPage } from './views/ShowDetails/ShowDetailsPage';
 
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
         path: '/show/:id',
         element: <ShowDetailsPage />,
         loader: async ({ params }) => {
-            return { show: await client().getShow(Number(params.id)) };
+            return { show: await clientFactory().getShow(Number(params.id)) };
         },
     },
 ]);

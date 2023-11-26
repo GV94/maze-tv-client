@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { Card } from '../Card';
 import { CardProps } from '../Card/CardProps';
 import './Listing.scss';
+
 type ListingProps = {
-    listItems: (CardProps & { id: number })[];
+    listItems: (CardProps & { id: number; navigationLink: string })[];
 };
 
 export const Listing: FC<ListingProps> = ({ listItems }) => {
@@ -12,7 +13,7 @@ export const Listing: FC<ListingProps> = ({ listItems }) => {
         <div className="listing">
             {listItems.map((item) => {
                 return (
-                    <Link to={`/show/${item.id}`} key={item.id}>
+                    <Link to={item.navigationLink} key={item.id}>
                         <div className="item">
                             <Card
                                 title={item.title}

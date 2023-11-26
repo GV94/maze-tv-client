@@ -15,28 +15,39 @@ export const Home: FC = () => {
 
     const [searchResults, setSearchResults] = useState<SearchResponse>([]);
 
+    const { isLoading, isDelayed, client } = useApi();
+
     useEffect(() => {
         (async () => {
-            const result = await client().getSchedule(getTodaysDate(), 'us');
+            const result = await client.getSchedule(getTodaysDate(), 'us');
             setScheduledShows(result);
         })();
-    }, []);
+    }, [client]);
 
-    const search = async (query: string) => {
-        const result = await client().search(query);
+    const doSearch = async (query: string) => {
+        const result = await client.search(query);
         setSearchResults(result);
     };
 
     return (
         <div>
             <h1>Astra TV</h1>
-            <Search onChange={(e) => search(e.target.value)} />
+            <Search onChange={(e) => doSearch(e.target.value)} />
+            {!isLoading && (
+                <p className="request-status">
+                    Loading...
+                    {!isDelayed
+                        ? ' Things are taking longer than usual, check your internet connection'
+                        : ''}
+                </p>
+            )}
             <h2>Today's Schedule</h2>
             <p>{getTodaysDate()}</p>
             {searchResults && searchResults?.length > 0 ? (
                 <Listing
                     listItems={searchResults.map(({ show }) => ({
                         id: show.id,
+                        navigationLink: `/show/${show.id}`,
                         title: show.name,
                         summary: stripHtmlOfTags(show.summary ?? '').slice(
                             0,
@@ -48,7 +59,8 @@ export const Home: FC = () => {
             ) : (
                 <Listing
                     listItems={scheduledShows.map((scheduleEntry) => ({
-                        id: scheduleEntry.show.id,
+                        id: scheduleEntry.id,
+                        navigationLink: `/show/${scheduleEntry.show.id}`,
                         title: scheduleEntry.show.name,
                         summary: stripHtmlOfTags(
                             scheduleEntry.show.summary ?? ''
