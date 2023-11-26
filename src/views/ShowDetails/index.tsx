@@ -5,8 +5,8 @@ import fallbackThumbnail from '../../assets/thumbnail_fallback.webp';
 import { Hero } from '../../components/Hero';
 import { Page } from '../../components/Page';
 import { stripHtmlOfTags } from '../../utils/text';
-import './ShowDetailsPage.scss';
-export const ShowDetailsPage: FC = () => {
+import './ShowDetails.scss';
+export const ShowDetails: FC = () => {
     const { show } = useLoaderData() as { show: ShowResponse };
 
     return (
