@@ -3,7 +3,7 @@ import { Card } from '../Card';
 import { CardProps } from '../Card/CardProps';
 import './Listing.scss';
 type ListingProps = {
-    listItems: (CardProps & { id: string })[];
+    listItems: (CardProps & { id: number })[];
 };
 
 export const Listing: FC<ListingProps> = ({ listItems }) => {
