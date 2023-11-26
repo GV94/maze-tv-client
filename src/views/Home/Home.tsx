@@ -1,9 +1,10 @@
 import { FC, useEffect, useState } from 'react';
-import { client } from '../../api/client';
 import { GetScheduleResponse } from '../../api/responses/ScheduleListResponse';
 import { SearchResponse } from '../../api/responses/SearchResponse';
+import { useApi } from '../../api/useApi';
 import fallbackImg from '../../assets/thumbnail_fallback.webp';
 import { Listing } from '../../components/Listing';
+import { Page } from '../../components/Page/Page';
 import { Search } from '../../components/Search';
 import { getTodaysDate } from '../../utils/date';
 import { stripHtmlOfTags } from '../../utils/text';
@@ -30,7 +31,7 @@ export const Home: FC = () => {
     };
 
     return (
-        <div>
+        <Page>
             <h1>Astra TV</h1>
             <Search onChange={(e) => doSearch(e.target.value)} />
             {!isLoading && (
@@ -70,6 +71,6 @@ export const Home: FC = () => {
                     }))}
                 />
             )}
-        </div>
+        </Page>
     );
 };
