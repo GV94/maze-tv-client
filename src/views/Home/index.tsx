@@ -4,12 +4,11 @@ import { SearchResponse } from '../../api/responses/SearchResponse';
 import fallbackImg from '../../assets/thumbnail_fallback.webp';
 import { Listing } from '../../components/Listing';
 import { Page } from '../../components/Page';
-import { RequestStatusIndicator } from '../../components/RequestStatusIndicator';
-import { Search } from '../../components/Search';
 import { useApi } from '../../hooks/useApi';
 import { useDebounce } from '../../hooks/useDebounce';
 import { getTodaysDate } from '../../utils/date';
 import { stripHtmlOfTags } from '../../utils/text';
+import { Search } from './Search';
 
 export const Home: FC = () => {
     const [scheduledShows, setScheduledShows] = useState<GetScheduleResponse>(
@@ -41,8 +40,10 @@ export const Home: FC = () => {
 
     return (
         <Page>
-            <Search onChange={(e) => debouncedSearch(e.target.value)} />
-            <RequestStatusIndicator {...status} />
+            <Search
+                onChange={(e) => debouncedSearch(e.target.value)}
+                requestStatus={status}
+            />
             <h2>Today's Schedule</h2>
             <p>{getTodaysDate()}</p>
             {searchResults && searchResults?.length > 0 ? (

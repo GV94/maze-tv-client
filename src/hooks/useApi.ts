@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react';
 import { clientFactory } from '../api/clientFactory';
+import { RequestStatus } from '../api/RequestStatus';
+import { Client } from '../api/client';
 
-export const useApi = () => {
+export const useApi = (): RequestStatus & { client: Client } => {
     const baseUrl = 'http://api.tvmaze.com';
     const [isLoading, setIsLoading] = useState(false);
     const [isDelayed, setIsDelayed] = useState(false);
