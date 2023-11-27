@@ -1,14 +1,15 @@
 import { FC, useEffect, useState } from 'react';
 import { GetScheduleResponse } from '../../api/responses/ScheduleListResponse';
 import { SearchResponse } from '../../api/responses/SearchResponse';
-import { useApi } from '../../api/useApi';
 import fallbackImg from '../../assets/thumbnail_fallback.webp';
 import { Listing } from '../../components/Listing';
 import { Page } from '../../components/Page';
+import { RequestStatusIndicator } from '../../components/RequestStatusIndicator';
 import { Search } from '../../components/Search';
+import { useApi } from '../../hooks/useApi';
+import { useDebounce } from '../../hooks/useDebounce';
 import { getTodaysDate } from '../../utils/date';
 import { stripHtmlOfTags } from '../../utils/text';
-import { RequestStatusIndicator } from '../../components/RequestStatusIndicator';
 
 export const Home: FC = () => {
     const [scheduledShows, setScheduledShows] = useState<GetScheduleResponse>(
@@ -36,9 +37,11 @@ export const Home: FC = () => {
         setSearchResults(result);
     };
 
+    const debouncedSearch = useDebounce(doSearch, 500);
+
     return (
         <Page>
-            <Search onChange={(e) => doSearch(e.target.value)} />
+            <Search onChange={(e) => debouncedSearch(e.target.value)} />
             <RequestStatusIndicator {...status} />
             <h2>Today's Schedule</h2>
             <p>{getTodaysDate()}</p>

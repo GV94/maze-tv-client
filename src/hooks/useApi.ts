@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { clientFactory } from './clientFactory';
+import { clientFactory } from '../api/clientFactory';
 
 export const useApi = () => {
     const baseUrl = 'http://api.tvmaze.com';
