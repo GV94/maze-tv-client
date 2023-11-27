@@ -14,22 +14,17 @@ export const Home: FC = () => {
     const [scheduledShows, setScheduledShows] = useState<GetScheduleResponse>(
         []
     );
-
     const [searchResults, setSearchResults] = useState<SearchResponse>([]);
-
     const { client, ...status } = useApi();
 
-    useEffect(() => {
-        const shouldFetchSchedule = () =>
-            !scheduledShows || scheduledShows?.length == 0;
+    const fetchSchedule = async () => {
+        const result = await client.getSchedule(getTodaysDate(), 'us');
+        setScheduledShows(result);
+    };
 
-        if (shouldFetchSchedule()) {
-            (async () => {
-                const result = await client.getSchedule(getTodaysDate(), 'us');
-                setScheduledShows(result);
-            })();
-        }
-    }, [client, scheduledShows]);
+    useEffect(() => {
+        fetchSchedule();
+    }, []);
 
     const doSearch = async (query: string) => {
         const result = await client.search(query);
