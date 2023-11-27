@@ -1,8 +1,13 @@
 import { FC, PropsWithChildren } from 'react';
 import './Page.scss';
-export const Page: FC<PropsWithChildren> = ({ children }) => {
+
+type HomeProps = {
+    className?: string;
+} & PropsWithChildren;
+export const Page: FC<HomeProps> = ({ children, className }) => {
+    const classes = className ? `page ${className}` : `page`;
     return (
-        <div className="page">
+        <div className={classes}>
             <h1>Astra TV</h1>
             {children}
         </div>
