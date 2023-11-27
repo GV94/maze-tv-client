@@ -8,7 +8,7 @@ export const Page: FC<HomeProps> = ({ children, className }) => {
     const classes = className ? `page ${className}` : `page`;
     return (
         <div className={classes}>
-            <h1>Astra TV</h1>
+            <h1>Astra TV 📺</h1>
             {children}
         </div>
     );
