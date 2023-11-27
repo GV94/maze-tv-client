@@ -4,7 +4,7 @@ import { RequestStatus } from '../api/RequestStatus';
 import { Client } from '../api/client';
 
 export const useApi = (): RequestStatus & { client: Client } => {
-    const baseUrl = 'http://api.tvmaze.com';
+    const baseUrl = 'http://localhost:3000';
     const [isLoading, setIsLoading] = useState(false);
     const [isDelayed, setIsDelayed] = useState(false);
     const [error, setError] = useState<Error>();
