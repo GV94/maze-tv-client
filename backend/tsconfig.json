@@ -7,7 +7,8 @@
     "noEmit": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node16",
-    "allowImportingTsExtensions": false,
-    "module": "Node16"
+    "allowImportingTsExtensions": true,
+    "module": "Node16",
+    "esModuleInterop": true
   }
 }

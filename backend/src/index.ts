@@ -1,6 +1,6 @@
-import { AppConfig } from './appConfig.js';
-import { createCache } from './cache.js';
-import { createServer } from './server.js';
+import { AppConfig } from './appConfig.ts';
+import { createCache } from './cache.ts';
+import { createServer } from './server.ts';
 
 const appConfig: AppConfig = {
     port: 3000,

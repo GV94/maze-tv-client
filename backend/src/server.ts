@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import type { Cache } from './cache.js';
-import { AppConfig } from './appConfig.js';
+import type { Cache } from './cache.ts';
+import { AppConfig } from './appConfig.ts';
 
 export const createServer = async (config: AppConfig, cache: Cache) => {
     const app = express();
