@@ -5,7 +5,7 @@ import { CardProps } from './CardProps';
 
 export const Card: FC<CardProps> = ({ title, subtitle, summary, image }) => {
     return (
-        <div className="card">
+        <div className="card" data-cy="card">
             <img src={image} alt="" className="thumbnail" />
             <div className="content">
                 <h3 className="title">{cropText(title, 40)}</h3>

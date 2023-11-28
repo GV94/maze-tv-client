@@ -10,7 +10,7 @@ export const RequestStatusIndicator: FC<RequestStatusIndicatorProps> = ({
 
     if (error) {
         childComponent = (
-            <div className="error">
+            <div className="error" data-cy="request-error">
                 {error?.message || 'Something went wrong 😕'}
             </div>
         );
@@ -18,15 +18,19 @@ export const RequestStatusIndicator: FC<RequestStatusIndicatorProps> = ({
 
     if (isLoading && isDelayed) {
         childComponent = (
-            <p className="loading">
+            <p className="loading" data-cy="request-loader__delayed">
                 Loading... Things are taking longer than usual, check your
                 internet connection 🐌
             </p>
         );
     }
 
-    if (isLoading) {
-        childComponent = <p className="loading">Loading...</p>;
+    if (isLoading && !isDelayed) {
+        childComponent = (
+            <p className="loading" data-cy="request-loader">
+                Loading...
+            </p>
+        );
     }
 
     return childComponent ? (

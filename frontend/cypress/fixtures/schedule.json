@@ -1,0 +1,577 @@
+[
+    {
+        "id": 1843172,
+        "url": "https://www.tvmaze.com/episodes/1843172/puppy-dog-pals-3x27-keias-birthday-balloon-bash",
+        "name": "Keia's Birthday Balloon Bash",
+        "season": 3,
+        "number": 27,
+        "type": "regular",
+        "airdate": "2020-05-29",
+        "airtime": "09:00",
+        "airstamp": "2020-05-29T13:00:00+00:00",
+        "runtime": 15,
+        "rating": {
+            "average": null
+        },
+        "image": null,
+        "summary": "<p>Bingo and Rolly go on a mission to find a special balloon for Keia's birthday party.</p>",
+        "_links": {
+            "self": {
+                "href": "https://api.tvmaze.com/episodes/1843172"
+            },
+            "show": {
+                "href": "https://api.tvmaze.com/shows/26341"
+            }
+        },
+        "show": {
+            "id": 26341,
+            "url": "https://www.tvmaze.com/shows/26341/puppy-dog-pals",
+            "name": "Puppy Dog Pals",
+            "type": "Animation",
+            "language": "English",
+            "genres": ["Comedy", "Children"],
+            "status": "Ended",
+            "runtime": 15,
+            "averageRuntime": 15,
+            "premiered": "2017-04-14",
+            "ended": "2023-01-20",
+            "officialSite": "https://disneynow.com/shows/puppy-dog-pals",
+            "schedule": {
+                "time": "08:30",
+                "days": ["Friday"]
+            },
+            "rating": {
+                "average": 7.3
+            },
+            "weight": 42,
+            "network": {
+                "id": 78,
+                "name": "Disney Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://disneynow.com/all-shows/disney-channel"
+            },
+            "webChannel": {
+                "id": 83,
+                "name": "DisneyNOW",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://disneynow.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 325978,
+                "imdb": "tt6688750"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/136/342487.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/136/342487.jpg"
+            },
+            "summary": "<p><b>Puppy Dog Pals </b>is about fun-loving pug puppies, brothers Bingo and Rolly, have thrill-seeking appetites that take them on exhilarating adventures in their neighborhood and around the globe. Whether helping their owner Bob or assisting a friend in need, the pugs' motto is that life is more exciting with your best friend by your side. Each episode features two 11-minute stories that showcase Bingo and Rolly's similarities and differences while demonstrating positive lessons about friendship, problem-solving, collaboration, creativity and adventure.</p>",
+            "updated": 1678525606,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/26341"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2452008"
+                }
+            }
+        }
+    },
+    {
+        "id": 1856870,
+        "url": "https://www.tvmaze.com/episodes/1856870/harley-quinn-2x09-bachelorette",
+        "name": "Bachelorette",
+        "season": 2,
+        "number": 9,
+        "type": "regular",
+        "airdate": "2020-05-29",
+        "airtime": "09:00",
+        "airstamp": "2020-05-29T13:00:00+00:00",
+        "runtime": 30,
+        "rating": {
+            "average": 7.8
+        },
+        "image": {
+            "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/257/644822.jpg",
+            "original": "https://static.tvmaze.com/uploads/images/original_untouched/257/644822.jpg"
+        },
+        "summary": "<p>It's Bachelor/Bachelorette weekend for Ivy and Kite Man.</p>",
+        "_links": {
+            "self": {
+                "href": "https://api.tvmaze.com/episodes/1856870"
+            },
+            "show": {
+                "href": "https://api.tvmaze.com/shows/33452"
+            }
+        },
+        "show": {
+            "id": 33452,
+            "url": "https://www.tvmaze.com/shows/33452/harley-quinn",
+            "name": "Harley Quinn",
+            "type": "Animation",
+            "language": "English",
+            "genres": ["Comedy", "Action", "Crime"],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 26,
+            "premiered": "2019-11-29",
+            "ended": null,
+            "officialSite": "https://www.max.com/shows/dc3552e4-32ed-4719-b3fb-7938b59b4658",
+            "schedule": {
+                "time": "",
+                "days": ["Thursday"]
+            },
+            "rating": {
+                "average": 7.5
+            },
+            "weight": 99,
+            "network": null,
+            "webChannel": {
+                "id": 329,
+                "name": "Max",
+                "country": null,
+                "officialSite": "https://www.max.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 365677,
+                "imdb": "tt7658402"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/415/1038535.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/415/1038535.jpg"
+            },
+            "summary": "<p><b>Harley Quinn</b>, based on the DC characters, focuses on Harley Quinn who has finally broken things off once and for all with the Joker and attempts to make it on her own as the criminal Queenpin of Gotham City. The series features Harley Quinn, Poison Ivy and a whole cast of heroes and villains, old and new, from the DC Universe.</p>",
+            "updated": 1700241564,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/33452"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2605043"
+                }
+            }
+        }
+    },
+    {
+        "id": 1843173,
+        "url": "https://www.tvmaze.com/episodes/1843173/puppy-dog-pals-3x28-hide-and-go-sleep",
+        "name": "Hide-and-Go Sleep",
+        "season": 3,
+        "number": 28,
+        "type": "regular",
+        "airdate": "2020-05-29",
+        "airtime": "09:15",
+        "airstamp": "2020-05-29T13:15:00+00:00",
+        "runtime": 15,
+        "rating": {
+            "average": null
+        },
+        "image": {
+            "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/136/342487.jpg",
+            "original": "https://static.tvmaze.com/uploads/images/original_untouched/136/342487.jpg"
+        },
+        "summary": "<p>When the pugs' cousin, Cody, goes missing during a game of hide-and-seek, Bingo and Rolly must find him before his family comes to pick him up.</p>",
+        "_links": {
+            "self": {
+                "href": "https://api.tvmaze.com/episodes/1843173"
+            },
+            "show": {
+                "href": "https://api.tvmaze.com/shows/26341"
+            }
+        },
+        "show": {
+            "id": 26341,
+            "url": "https://www.tvmaze.com/shows/26341/puppy-dog-pals",
+            "name": "Puppy Dog Pals",
+            "type": "Animation",
+            "language": "English",
+            "genres": ["Comedy", "Children"],
+            "status": "Ended",
+            "runtime": 15,
+            "averageRuntime": 15,
+            "premiered": "2017-04-14",
+            "ended": "2023-01-20",
+            "officialSite": "https://disneynow.com/shows/puppy-dog-pals",
+            "schedule": {
+                "time": "08:30",
+                "days": ["Friday"]
+            },
+            "rating": {
+                "average": 7.3
+            },
+            "weight": 42,
+            "network": {
+                "id": 78,
+                "name": "Disney Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://disneynow.com/all-shows/disney-channel"
+            },
+            "webChannel": {
+                "id": 83,
+                "name": "DisneyNOW",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://disneynow.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 325978,
+                "imdb": "tt6688750"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/136/342487.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/136/342487.jpg"
+            },
+            "summary": "<p><b>Puppy Dog Pals </b>is about fun-loving pug puppies, brothers Bingo and Rolly, have thrill-seeking appetites that take them on exhilarating adventures in their neighborhood and around the globe. Whether helping their owner Bob or assisting a friend in need, the pugs' motto is that life is more exciting with your best friend by your side. Each episode features two 11-minute stories that showcase Bingo and Rolly's similarities and differences while demonstrating positive lessons about friendship, problem-solving, collaboration, creativity and adventure.</p>",
+            "updated": 1678525606,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/26341"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2452008"
+                }
+            }
+        }
+    },
+    {
+        "id": 1876125,
+        "url": "https://www.tvmaze.com/episodes/1876125/off-topic-2020-05-29-im-deep-in-the-awful-off-topic-235",
+        "name": "I'm Deep In The Awful - Off Topic - #235",
+        "season": 2020,
+        "number": 21,
+        "type": "regular",
+        "airdate": "2020-05-29",
+        "airtime": "",
+        "airstamp": "2020-05-29T16:00:00+00:00",
+        "runtime": 120,
+        "rating": {
+            "average": null
+        },
+        "image": null,
+        "summary": null,
+        "_links": {
+            "self": {
+                "href": "https://api.tvmaze.com/episodes/1876125"
+            },
+            "show": {
+                "href": "https://api.tvmaze.com/shows/18752"
+            }
+        },
+        "show": {
+            "id": 18752,
+            "url": "https://www.tvmaze.com/shows/18752/off-topic",
+            "name": "Off Topic",
+            "type": "Talk Show",
+            "language": "English",
+            "genres": ["Comedy"],
+            "status": "Running",
+            "runtime": 120,
+            "averageRuntime": 120,
+            "premiered": "2015-12-06",
+            "ended": null,
+            "officialSite": "https://roosterteeth.com/series/off-topic-the-achievement-hunter-podcast",
+            "schedule": {
+                "time": "",
+                "days": ["Sunday"]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 27,
+            "network": null,
+            "webChannel": {
+                "id": 32,
+                "name": "Rooster Teeth",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://roosterteeth.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 310336,
+                "imdb": "tt6468694"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/64/161570.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/64/161570.jpg"
+            },
+            "summary": "<p>The lads and lasses of Achievement Hunter congregate each week to discuss the important questions in life. Plus drink beer.</p>",
+            "updated": 1667992184,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/18752"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2428268"
+                }
+            }
+        }
+    },
+    {
+        "id": 1813386,
+        "url": "https://www.tvmaze.com/episodes/1813386/ramy-2x01-bayah",
+        "name": "Bay'ah",
+        "season": 2,
+        "number": 1,
+        "type": "regular",
+        "airdate": "2020-05-29",
+        "airtime": "",
+        "airstamp": "2020-05-29T16:00:00+00:00",
+        "runtime": 30,
+        "rating": {
+            "average": 8
+        },
+        "image": {
+            "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/259/647642.jpg",
+            "original": "https://static.tvmaze.com/uploads/images/original_untouched/259/647642.jpg"
+        },
+        "summary": "<p>Bro...You want real love? commit to the right person. take the bay'ah.</p>",
+        "_links": {
+            "self": {
+                "href": "https://api.tvmaze.com/episodes/1813386"
+            },
+            "show": {
+                "href": "https://api.tvmaze.com/shows/36563"
+            }
+        },
+        "show": {
+            "id": 36563,
+            "url": "https://www.tvmaze.com/shows/36563/ramy",
+            "name": "Ramy",
+            "type": "Scripted",
+            "language": "English",
+            "genres": ["Drama", "Comedy", "Family"],
+            "status": "To Be Determined",
+            "runtime": null,
+            "averageRuntime": 31,
+            "premiered": "2019-04-19",
+            "ended": null,
+            "officialSite": "https://www.hulu.com/series/ramy-4bcb6c3a-3d9a-4d49-b8e0-57fb7de9c8d6",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 5
+            },
+            "weight": 89,
+            "network": null,
+            "webChannel": {
+                "id": 2,
+                "name": "Hulu",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.hulu.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 359257,
+                "imdb": "tt7649694"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1113772.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/445/1113772.jpg"
+            },
+            "summary": "<p>Ramy Hassan is a first-generation Egyptian-American who is on a spiritual journey in his politically divided New Jersey neighborhood. He becomes caught between a Muslim community that thinks life is a moral test and a millennial generation that believes life has no consequences. Through it all, he's still trying to do the things that most 20-somethings do, like date. He is essentially a guy who is torn between praying on Fridays and going to parties on Friday nights. Which side will win out in this seemingly endless internal battle?</p>",
+            "updated": 1695005845,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/36563"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2375204"
+                }
+            }
+        }
+    },
+    {
+        "id": 1856648,
+        "url": "https://www.tvmaze.com/episodes/1856648/ramy-2x02-can-you-hear-me-now",
+        "name": "Can You Hear Me Now?",
+        "season": 2,
+        "number": 2,
+        "type": "regular",
+        "airdate": "2020-05-29",
+        "airtime": "",
+        "airstamp": "2020-05-29T16:00:00+00:00",
+        "runtime": 30,
+        "rating": {
+            "average": 8
+        },
+        "image": {
+            "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/259/647643.jpg",
+            "original": "https://static.tvmaze.com/uploads/images/original_untouched/259/647643.jpg"
+        },
+        "summary": "<p>Hey i'm starting to think those guys at Verizon had a point.</p>",
+        "_links": {
+            "self": {
+                "href": "https://api.tvmaze.com/episodes/1856648"
+            },
+            "show": {
+                "href": "https://api.tvmaze.com/shows/36563"
+            }
+        },
+        "show": {
+            "id": 36563,
+            "url": "https://www.tvmaze.com/shows/36563/ramy",
+            "name": "Ramy",
+            "type": "Scripted",
+            "language": "English",
+            "genres": ["Drama", "Comedy", "Family"],
+            "status": "To Be Determined",
+            "runtime": null,
+            "averageRuntime": 31,
+            "premiered": "2019-04-19",
+            "ended": null,
+            "officialSite": "https://www.hulu.com/series/ramy-4bcb6c3a-3d9a-4d49-b8e0-57fb7de9c8d6",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 5
+            },
+            "weight": 89,
+            "network": null,
+            "webChannel": {
+                "id": 2,
+                "name": "Hulu",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.hulu.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 359257,
+                "imdb": "tt7649694"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1113772.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/445/1113772.jpg"
+            },
+            "summary": "<p>Ramy Hassan is a first-generation Egyptian-American who is on a spiritual journey in his politically divided New Jersey neighborhood. He becomes caught between a Muslim community that thinks life is a moral test and a millennial generation that believes life has no consequences. Through it all, he's still trying to do the things that most 20-somethings do, like date. He is essentially a guy who is torn between praying on Fridays and going to parties on Friday nights. Which side will win out in this seemingly endless internal battle?</p>",
+            "updated": 1695005845,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/36563"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2375204"
+                }
+            }
+        }
+    },
+    {
+        "id": 1856649,
+        "url": "https://www.tvmaze.com/episodes/1856649/ramy-2x03-little-omar",
+        "name": "Little Omar",
+        "season": 2,
+        "number": 3,
+        "type": "regular",
+        "airdate": "2020-05-29",
+        "airtime": "",
+        "airstamp": "2020-05-29T16:00:00+00:00",
+        "runtime": 30,
+        "rating": {
+            "average": 8.3
+        },
+        "image": {
+            "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/259/647644.jpg",
+            "original": "https://static.tvmaze.com/uploads/images/original_untouched/259/647644.jpg"
+        },
+        "summary": "<p>He told you about little Omar. stop acting like you didn't know. now you gotta explain this dog to your parents?? it's haraam. you're just - haraam.</p>",
+        "_links": {
+            "self": {
+                "href": "https://api.tvmaze.com/episodes/1856649"
+            },
+            "show": {
+                "href": "https://api.tvmaze.com/shows/36563"
+            }
+        },
+        "show": {
+            "id": 36563,
+            "url": "https://www.tvmaze.com/shows/36563/ramy",
+            "name": "Ramy",
+            "type": "Scripted",
+            "language": "English",
+            "genres": ["Drama", "Comedy", "Family"],
+            "status": "To Be Determined",
+            "runtime": null,
+            "averageRuntime": 31,
+            "premiered": "2019-04-19",
+            "ended": null,
+            "officialSite": "https://www.hulu.com/series/ramy-4bcb6c3a-3d9a-4d49-b8e0-57fb7de9c8d6",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": 5
+            },
+            "weight": 89,
+            "network": null,
+            "webChannel": {
+                "id": 2,
+                "name": "Hulu",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.hulu.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 359257,
+                "imdb": "tt7649694"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1113772.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/445/1113772.jpg"
+            },
+            "summary": "<p>Ramy Hassan is a first-generation Egyptian-American who is on a spiritual journey in his politically divided New Jersey neighborhood. He becomes caught between a Muslim community that thinks life is a moral test and a millennial generation that believes life has no consequences. Through it all, he's still trying to do the things that most 20-somethings do, like date. He is essentially a guy who is torn between praying on Fridays and going to parties on Friday nights. Which side will win out in this seemingly endless internal battle?</p>",
+            "updated": 1695005845,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/36563"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2375204"
+                }
+            }
+        }
+    }
+]

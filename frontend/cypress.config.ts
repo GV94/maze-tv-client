@@ -15,10 +15,13 @@ export default defineConfig({
         setupNodeEvents(on, config) {
             codeCoverageTask(on, config);
 
-            // include any other plugin code...
+            return config;
+        },
+    },
 
-            // It's IMPORTANT to return the config object
-            // with any changed environment variables
+    e2e: {
+        setupNodeEvents(on, config) {
+            codeCoverageTask(on, config);
             return config;
         },
     },
