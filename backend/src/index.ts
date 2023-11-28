@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import { createCache } from './cache';
-import type { Cache } from './cache';
+import { createCache } from './cache.js';
+import type { Cache } from './cache.js';
 
 const appConfig = {
     port: 3000,
