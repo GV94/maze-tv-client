@@ -38,7 +38,6 @@ export const Home: FC = () => {
         <Page className="home">
             <Search
                 onChange={(e) => debouncedSearch(e.target.value)}
-                requestStatus={status}
             />
             <RequestStatusIndicator {...status} />
             <div className="home-listing">
