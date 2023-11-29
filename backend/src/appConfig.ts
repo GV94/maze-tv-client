@@ -1,3 +1,6 @@
+export type CacheConfig = {
+    url: string;
+};
 export type AppConfig = {
     port: number;
     baseUrl: string;
@@ -5,4 +8,5 @@ export type AppConfig = {
         origin: string;
         optionsSuccessStatus: number;
     };
+    cache: CacheConfig;
 };

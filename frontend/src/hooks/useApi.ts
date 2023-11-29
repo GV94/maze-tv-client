@@ -4,7 +4,7 @@ import { RequestStatus } from '../api/RequestStatus';
 import { Client } from '../api/client';
 
 export const useApi = (): RequestStatus & { client: Client } => {
-    const baseUrl = 'http://localhost:3000';
+    const baseUrl = import.meta.env.VITE_API_BASE_URL;
     const [isLoading, setIsLoading] = useState(false);
     const [isDelayed, setIsDelayed] = useState(false);
     const [error, setError] = useState<Error>();

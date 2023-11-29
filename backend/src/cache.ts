@@ -1,9 +1,10 @@
 import { createClient } from 'redis';
+import { CacheConfig } from './appConfig.ts';
 
 export type Cache = Awaited<ReturnType<typeof createCache>>;
 
-export const createCache = async () => {
-    const redisClient = createClient();
+export const createCache = async (config: CacheConfig) => {
+    const redisClient = createClient({url: config.url});
     redisClient.on('error', (err) => console.log('Redis Client Error', err));
     await redisClient.connect();
 

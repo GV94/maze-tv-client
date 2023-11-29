@@ -3,7 +3,7 @@ import { GetScheduleResponse } from './responses/ScheduleListResponse';
 import { SearchResponse } from './responses/SearchResponse';
 
 const defaultExecutor = async <T>(url: string): Promise<T> => {
-    const response = await fetch('http://localhost:3000' + url);
+    const response = await fetch(import.meta.env.VITE_API_BASE_URL + url);
     return response.json();
 };
 
