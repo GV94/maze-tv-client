@@ -3,9 +3,29 @@ services:
     redis:
         image: redis:latest
         ports:
-            - '6379:6379'
+            - 6379:6379
         volumes:
             - redis_data:/data
-
+    frontend:
+        build:
+            context: ./frontend
+            dockerfile: dockerfile
+        ports:
+            - 4173:4173
+        depends_on:
+            - backend
+    backend:
+        build:
+            context: ./backend
+            dockerfile: dockerfile
+        ports:
+            - 3000:3000
+        environment:
+            - REDIS_URL=redis://redis:6379
+            - API_BASE_URL=http://api.tvmaze.com
+            - FRONTEND_BASE_URL=http://localhost:4173
+            - PORT=3000
+        depends_on:
+            - redis
 volumes:
     redis_data:
