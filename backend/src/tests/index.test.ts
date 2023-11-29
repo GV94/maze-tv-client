@@ -18,6 +18,9 @@ describe('Express Server', () => {
                     origin: 'http://myurl.com',
                     optionsSuccessStatus: 200,
                 },
+                cache:{
+                    url: 'redis://localhost:someport'
+                }
             },
             cache
         );
