@@ -49,9 +49,6 @@ devDependencies:
   eslint-plugin-react-refresh:
     specifier: ^0.4.4
     version: 0.4.4(eslint@8.53.0)
-  nyc:
-    specifier: ^15.1.0
-    version: 15.1.0
   sass:
     specifier: ^1.69.5
     version: 1.69.5
