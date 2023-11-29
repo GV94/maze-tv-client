@@ -1,4 +1,4 @@
-FROM astra-tv-base
+FROM maze-tv-base
 
 WORKDIR /app
 

@@ -21,7 +21,7 @@ or
 
 Build the base image that the frontend and backend share
 
-`docker build -f dockerfile.base . -t astra-tv-base:latest`
+`docker build -f dockerfile.base . -t maze-tv-base:latest`
 
 run `docker compose up`, this will start the frontend, backend, and redis server.
 
