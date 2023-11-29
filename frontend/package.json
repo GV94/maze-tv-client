@@ -7,7 +7,8 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "test": "pnpm build; pnpm preview --port 5173 & pnpm wait-on localhost:4173 & pnpm cypress run"
     },
     "dependencies": {
         "prettier": "^3.1.0",
@@ -30,6 +31,7 @@
         "sass": "^1.69.5",
         "typescript": "^5.2.2",
         "vite": "^5.0.0",
-        "vite-plugin-istanbul": "^5.0.0"
+        "vite-plugin-istanbul": "^5.0.0",
+        "wait-on": "^7.2.0"
     }
 }
